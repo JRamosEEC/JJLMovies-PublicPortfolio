@@ -1,0 +1,953 @@
+/*
+    ADDITIONAL DEMO STYLE, NOT IMPORTANT TO MAKE THINGS WORK BUT TO MAKE IT A BIT NICER :)1
+*/
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+/*Debug CSS outlines every box*/
+/* {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+  }
+*/
+
+html {
+    height: 100%;
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+body {
+    font-family: "Roboto","Arial",sans-serif;
+    font-size: 18px;
+    background-image: url('/images/background.png');
+    color: #f1f1f1;
+    min-width: 100%;
+
+    min-height: 100%;
+}
+
+input {
+    max-width: 100%;
+}
+
+.wrapper {
+    min-height: 100vh;
+}
+
+p {
+    font-family: "Roboto","Arial",sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #f1f1f1;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+h3 {
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 22px;
+}
+
+.btn {
+    display: inline-block;
+
+    width: 160px;
+    height: 45px;
+
+    padding-top: 0;
+    padding-bottom: 0;
+
+    border: none;
+    outline-color: #2C2D43;
+    background-color: #2C2D43;
+
+    color: #f1f1f1;
+
+    font-size: 18px;
+    font-family: "Roboto","Arial",sans-serif;
+    font-style: normal;
+
+    text-align: center;
+    line-height: 42px;
+    vertical-align: middle;
+
+    transition: all 0.15s;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open>.dropdown-toggle.btn-primary {
+    background-color: #2C2D43;
+
+    box-shadow: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    background-color: #1e1e30;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem #2d2e3e;
+}
+
+.btn-primary:hover {
+    box-shadow: 0 0 0 0.1rem #9fa1b7;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centerV {
+    display: flex;
+    align-items: center;
+}
+
+.centerIcon {
+    align-items: center;
+    justify-content: center;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.no-marginL {
+    margin-left: 0 !important;
+}
+
+.no-marginR {
+    margin-right: 0 !important;
+}
+
+.no-pad {
+    padding: 0 !important;
+}
+
+.no-padL {
+    padding-left: 0 !important;
+}
+
+.no-padR {
+    padding-right: 0 !important;
+}
+
+.transparent {
+    background-color: transparent !important;
+}
+
+.largeBtn {
+    background-color: #373B69;
+    border: none;
+    color: #f1f1f1;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.profileDetails {
+    width: 300px;
+    height: calc(100vh - 225px);
+    margin-top: 70px !important;
+    margin-left: 100px !important;
+}
+
+.profileMovies {
+    height: calc(100vh - 225px);
+    margin-top: 70px !important;
+    margin-right: 100px !important;
+}
+
+#trendingMoviesContainer {
+    max-width: 80%;
+    
+    color: #f1f1f1;
+
+    transition: all 0.25s;
+}
+
+#trendRow {
+    width: 100%;
+}
+
+#trendingCard {
+    background-color: #181b23;
+    color: #181b23;
+
+    aspect-ratio: 2 / 3.75;
+    width: calc(14% + 10px);
+
+    border: 0px solid #202123;
+    border-radius: 0.5vw;
+
+    margin: 1vw;
+    padding: 0.7vw;
+
+    cursor: pointer;
+
+    transition: all 0.15s;
+}
+
+.trendingTop3 {
+    width: calc(15% + 10px) !important;
+}
+
+.trendingTop2 {
+    width: calc(16% + 10px) !important;
+}
+
+.trendingTop1 {
+    width: calc(17% + 10px) !important;
+}
+
+#trendingCard:hover {
+    outline: 3px solid #2c2d40;
+    background-color: #15171e;
+}
+
+#trendingCard:hover #trendMovieTitle {
+    color: white;
+    text-decoration: underline;
+}
+
+#trendImg {
+    aspect-ratio: 2 / 3;
+    width: 100%;
+
+    border-radius: 0.5vw;
+}
+
+#trendMovieTitle {
+    padding-left: 2px;
+    padding-right: 2px;
+
+    max-height: 2.5vw;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+#trendMovieInfo {
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    overflow: hidden;
+
+    aspect-ratio: 2 / 0.95;
+    width: 100%;
+    
+    color: #f1f1f1;
+    font-weight: bold;
+    font-size: 0.8vw;
+}
+
+#trendMovieInfoTop3 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    overflow: hidden;
+
+    aspect-ratio: 2 / 0.9;
+    width: 100%;
+
+    color: #f1f1f1;
+    font-weight: bold;
+    font-size: 0.8vw;
+}
+
+#trendMovieInfoTop2 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    overflow: hidden;
+
+    aspect-ratio: 2 / 0.9;
+    width: 100%;
+
+    color: #f1f1f1;
+    font-weight: bold;
+    font-size: 0.85vw;
+}
+
+#trendMovieInfoTop1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    overflow: hidden;
+
+    aspect-ratio: 2 / 0.9;
+    width: 100%;
+
+    color: #f1f1f1;
+    font-weight: bold;
+    font-size: 0.9vw;
+}
+
+#movieRatingContainer {
+    height: 2.5vw;
+    line-height: normal;
+}
+
+#trendMovieRating {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 0.5vw;
+}
+
+#profileContainer {
+    width: 100%;
+}
+
+#profileMovieImg {
+    width: 200px;
+    height: 300px;
+
+    border-radius: 0.5rem;
+    border: 3px solid #2b2c2c;
+    transition: all 0.5s;
+}
+
+#profileMovieImg:hover {
+    border-color: #9da3b0;
+}
+
+#fadeLayer {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -5;
+    background-color: black;
+    opacity: 0%;
+    transition: all 0.3s;
+}
+
+#fadeLayer.active {
+    opacity: 70%;
+    z-index: 9998;
+}
+
+#spacerLine {
+    height: 1px;
+    width: 90%;
+    background-color: #2c2e42;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#spacerDiv {
+    margin-bottom: 75px;
+}
+
+#profileIMG {
+    height: 230px;
+}
+
+#profileUsername {
+    height: 45px;
+    font-weight: bold;
+}
+
+#profileName {
+    height: 45px;
+    font-weight: bold;
+}
+
+#profileFollowers {
+    margin-top: 65px;
+    font-weight: bold;
+}
+
+#followersText {
+    width: 100%;
+}
+
+#profileAddMovie {
+    height: 177px;
+}
+
+#movieRating {
+    background: rgba(0, 0, 0, 0.2);
+    
+    padding:4px;
+    margin:5px;
+}
+
+#userMovieBtns {
+    width: 200px;
+
+    transition: all 0.15s;
+}
+
+#editMovieBtnContainer {
+    width: 80%;
+    padding-right: 5px;
+
+    transition: all 0.15s;
+}
+
+#editMovieBtn {
+    background: #2C2D43;
+    color: white;
+
+    border: 1px solid #2C2D43;
+    border-radius: 0.2rem;
+
+    height: 36px;
+    margin-bottom: 25px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    transition: all 0.15s;
+}
+
+#editMovieBtn:hover {
+    border-color: #4d4f74;
+    background-color: #2C2D43;
+}
+
+#shareMovieBtnContainer {
+    width: 20%;
+    height: 36px;
+    margin: 0px;
+
+    border: 1px solid #2C2D43;
+    border-radius: 0.2rem;
+
+    background: #2C2D43;
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    transition: all 0.15s;
+}
+
+#shareMovieBtnContainer:hover {
+    border-color: #4d4f74;
+    background-color: #2C2D43;
+}
+
+#shareImg{
+    width: 25px;
+    height: 25px;
+
+    transition: all 0.15s;
+}
+
+#movieDescTextArea{
+    height: 100px;
+    width: 100%;
+    word-wrap: break-word;
+}
+
+#profileLogout {
+    height: 177px;
+}
+
+#loginResponse {
+    color:red;
+    font-size:20px;
+    margin-top: 20px;
+    max-width: 100%;
+}
+
+#content {
+    width: 100%;
+    min-height: 104px;
+    margin-top: 25px;
+    /*Margin left must have 55px more to compensate the static nav bar the margin will gets removed when screen shrinks and nav disappears*/
+    margin-left: 130px;
+    margin-right: 75px;
+    transition: all 0.3s;
+}
+
+#bodyContainer {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+
+    min-height: calc(100vh - 85px);
+}
+
+#pageContainer {
+    background: rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding: 20px;
+}
+
+#itemContainer {
+    background: #0b0b0bf0;
+
+    border: 3px solid #202123;
+    border-radius: 0.5rem;
+    
+    margin: 10px;
+    padding: 18px;
+}
+
+#selectableContainer {
+    background: #0b0b0bf0;
+
+    border: 3px solid #202123;
+    border-radius: 0.5rem;
+    
+    margin: 10px;
+    padding: 18px;
+
+    cursor: pointer;
+
+    transition: all 0.5s;
+}
+
+#selectableContainer:hover {
+    border-color: #9da3b0;
+}
+
+.profileMovieContainer {
+    height: 82vh;
+    min-height: 800px;
+    overflow: hidden;
+}
+
+#PrevPage {
+    position: absolute;
+    width: 30px !important;
+    height: 75px !important;
+    line-height: 70px !important;
+    padding: 0;
+    left: 0px;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+#NextPage {
+    position: absolute;
+    width: 30px !important;
+    height: 75px !important;
+    line-height: 70px !important;
+    padding: 0;
+    right: 0px;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+#movieItem {
+    width: 25%;
+
+    padding-top: calc((100vh - 990px)/4);
+    padding-bottom: calc((100vh - 990px)/4);
+}
+
+#movieitemContainer {
+    background: #2C2D43;
+    color: white;
+
+    border: 1px solid #2C2D43;
+    border-radius: 0.2rem;
+
+    margin: 5px;
+    width: 200px;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    transition: all 0.15s;
+}
+
+#movieitemContainer:hover {
+    border-color: #4d4f74;
+    background-color: #2C2D43;
+}
+
+#formInput {
+    max-width: 100%;
+}
+
+#feedItem {
+    max-width: 100%;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    border-radius: 0.5rem;
+
+    font-family: "Roboto","Arial",sans-serif;
+    font-size: 18px;
+    
+    color: #f1f1f1;
+    outline: 0px solid #2c2d40;
+    background: #181b23;
+
+    transition: all 0.15s;
+}
+
+#feedItem:hover {
+    outline: 3px solid #2c2d40;
+    background-color: #15171e;
+}
+
+#feedItem:hover #componentHeader {
+    background-color: #242430;
+}
+
+#feedImgContainer {
+    background: #111019;
+}
+
+#feedComponentHeader {
+    min-height: 55px;
+    align-items: center;
+    background-color: #2c2d40;
+
+    border-top-right-radius: 0.5rem;
+
+    transition: all 0.15s;
+}
+
+#feedComponentMovieImg img {
+    border-radius: 0.5rem;
+}
+
+#feedComponentMovieImg * img {
+    border-radius: 0.5rem;
+}
+
+#feedDetail {
+    width: calc(100% - 150px);
+}
+
+#feedTitle {
+    font-family: "Roboto","Arial",sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#feedCreator {
+    padding-top: 5px;
+    padding-left: 15px;
+
+    font-size: 16px;
+    color: #498be2;
+}
+
+#feedDescription {
+    font-size: 14px;
+    min-height: 110px;
+
+    padding-left: 15px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#feedDescText {
+    width: 100%;
+    padding: 0;
+    padding-right: 10px;
+
+    color: #f1f1f1;
+
+    background-color: transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: none;
+    resize: none;
+}
+
+#feedDate {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 15px;
+
+    font-size: 14px;
+}
+
+#feedRating {
+    color: #498be2;
+}
+
+#feedComponentDetails {
+    font-size: 16px;
+}
+
+#feedComponentMovieImg {
+    padding: 0px;
+}
+
+#formContainer {
+    max-width: 100%;
+
+    margin-bottom: 50px;
+}
+
+#formField {
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+#likecount {
+    background-color: #2C2D43;
+    padding-right: 5px;
+}
+
+#uploadImageContainer {
+    position: relative;
+
+    min-width: 150px;
+    min-height: 225px;
+
+    overflow: hidden;
+}
+
+#uploadImageContainer input, #uploadMovieImageIcon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0px;
+    top: 0px;
+}
+
+input[type="file"]#movieFileUploadBtn{
+    -webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+    
+    font-size: 0px;
+    cursor: pointer;
+}
+
+input[type=file]#movieFileUploadBtn::file-selector-button{
+    visibility: hidden;
+    color: transparent;
+}
+
+input[type=file]#movieFileUploadBtn::-webkit-file-upload-button{
+    visibility: hidden;
+    color: transparent;
+}
+
+#movieFileUploadBtn {
+    background-color: transparent;
+
+    background: url('/images/upload-icon.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    opacity: 0.7;
+
+    border-style: solid;
+    border-color: #9096a5;
+    border-radius: 0.5rem;
+    border-width: 3px;
+
+    transition: all 0.5s;
+}
+
+#movieFileUploadBtn:hover {
+    background-color: #15171eb1;
+    opacity: 1;
+}
+
+#genreSelect {
+    font-size: 14px;
+    width: 50%;
+
+    background-color: transparent;
+    color: #cecece;
+
+    border: none;
+    border-bottom: 2px solid #2c2e32;
+
+    height: auto !important;
+}
+
+#genreSelect option {
+    background-color: #2c2e32;
+}
+
+#movieFormTxt {
+    color: #cecece;
+
+    font-family: "Roboto","Arial",sans-serif;
+    font-weight: bold;
+
+    background-color: transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor: text;
+    overflow: hidden;
+    outline: none;
+
+    border-bottom: 2px solid #2c2e32;
+}
+
+#movieFormTxtDesc {
+    color: #cecece;
+
+    font-family: "Roboto","Arial",sans-serif;
+    font-weight: bold;
+
+    width: 100%;
+    background-color: transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: none;
+    resize: none;
+
+    border: 2px solid #2c2e32;
+}
+
+#submitContainer{
+    max-width: 100%;
+}
+
+#movieFormTxtDesc::-webkit-scrollbar-track
+{
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: rgba(24, 26, 43, 0.95);
+    border-left: 1px solid #2c2e32;
+}
+
+#movieFormTxtDesc::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: rgba(24, 26, 43, 0.95);
+}
+
+#movieFormTxtDesc::-webkit-scrollbar-thumb
+{
+	background-color: #cecece;
+    border-radius: 10px;
+}
+
+/*Width Checks*/
+
+@media screen and (max-width: 870px) {
+    #trendingMoviesContainer {
+        max-width: 90%;
+    }
+
+    #content {
+        /*Remove Margin on smaller screen sizes to expand content*/
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    #feedItem {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #trendingMoviesContainer {
+        max-width: 100%;
+    }
+
+    #feedDetail {
+        width: 100%;
+    }
+
+    #feedItem {
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+    }
+
+    #feedImgContainer {
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+        border-top-right-radius: 0.5rem;
+        border-top-left-radius: 0.5rem;
+    }
+
+    #feedComponentHeader {
+        border-top-left-radius: 0.5rem;
+    }
+
+    #feedComponentDetails {
+        font-size: 14px;
+    }
+
+    #genreSelect {
+        font-size: 12px;
+    }
+
+    #submitBtn {
+       width: 125px;
+       font-size: 16px; 
+    }
+
+    #deleteBtn {
+        width: 125px;
+        font-size: 16px; 
+     }
+
+     #profileMovieImg {
+        width: 120px;
+        height: 180px;
+    }
+
+    #movieitemContainer {
+        width: 120px;
+        font-size: 9px;
+    }
+
+    #userMovieBtns {
+        width: 120px;
+    }
+
+    #editMovieBtn {
+        height: 26px;
+        font-size: 10px;
+    }
+
+    #editMovieBtnContainer {
+        width: 73%;
+    }
+
+    #shareMovieBtnContainer {
+        width: 27%;
+        height: 26px;
+        font-size: 10px;
+    }
+
+    #shareImg{
+        width: 15px;
+        height: 15px;
+    }
+
+    .profileMovieContainer {
+        min-height: 535px;
+    }
+}

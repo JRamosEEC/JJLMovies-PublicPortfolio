@@ -1,0 +1,33 @@
+#staticSidebar {
+    position: fixed;
+
+    min-width: 55px;
+    max-width: 55px;
+
+    height: 100vh;
+
+    z-index: 9995;
+    
+    background-color: #181b23;
+    color: #58595f;
+    transition: all 0.3s;
+}
+
+#navStaticIcon {
+    max-width: 40px;
+    max-height: 40px;
+
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#staticSidebar ul li a:hover {
+    background: #383845;
+}
+
+
+@media screen and (max-width: 870px) {
+    #staticSidebar {
+        margin-left: -55px;
+    }
+}

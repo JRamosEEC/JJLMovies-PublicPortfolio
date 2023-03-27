@@ -1,0 +1,150 @@
+#sidebar {
+    width: 100%;
+    min-width: 210px;
+    max-width: 250px;
+    min-height: 100vh;
+
+    margin-left: -250px;
+
+    position: fixed;
+    z-index: 9999;
+    
+    background-color: #181b23;
+    color: #58595f;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-left: 0px;
+}
+
+#sidebarHeader {
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    align-items: center;
+}
+
+#sidebarCollapseBtn, #sidebarCollapseBtn * {
+    width: 35px;
+    height: 35px;
+
+    color: #cecece;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sidebarNavList {
+    padding: 10px 0;
+}
+
+#sidebar ul p {
+    color: #58595f;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+
+    margin: 0px;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: flex;
+}
+
+#sidebar ul li a:hover {
+    background: #383845;
+    color: #cecece;
+}
+
+#sidebar ul li a:hover p {
+    color: #cecece;
+}
+
+#navLogo {
+    max-width: 70px;
+    max-height: 70px;
+
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#navIcon {
+    max-width: 40px;
+    max-height: 40px;
+    margin-left: 25px;
+
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#navArrow {
+    max-width: 30px;
+    max-height: 30px;
+    padding: 0;
+
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#donateContainer {
+    position: absolute;
+    bottom: 20px;
+
+    color: lightgray;
+}
+
+#donateContainer p {
+    margin-bottom: 5px;
+}
+
+#donationFeedback {
+    text-align: center;
+}
+
+#donationTxt {
+    color: #cecece;
+
+    height: 0px;
+
+    width: 85%;
+    margin-bottom: 0px;
+
+    padding: 0px;
+
+    font-family: "Roboto","Arial",sans-serif;
+    font-weight: bold;
+
+    text-align: center;
+
+    background-color: transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor: text;
+    overflow: hidden;
+    outline: none;
+
+    border-bottom: 0px solid #2c2e32;
+
+    transition: all 0.5s;
+}
+
+#donationTxt.active {
+    height: 35px;
+
+    margin-bottom: 15px;
+
+    padding: 2px;
+
+    border-bottom: 2px solid #2c2e32;
+}
+
+.current-page{
+    background-color: #0e0f14 ;
+}

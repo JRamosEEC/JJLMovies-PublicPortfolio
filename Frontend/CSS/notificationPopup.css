@@ -1,0 +1,29 @@
+#notificationContainer {
+    display: flex;
+    flex-flow: column;
+
+    position: fixed;
+
+    bottom: -60px;
+    left: 60px;
+
+    width: 250px;
+    height: 40px;
+
+    padding-left: 5px;
+    padding-right: 5px;
+
+    background: #111111;
+    color: #e2e3e8;
+
+    font-size: 15px;
+
+    border: 3px solid #202123;
+    border-radius: 0.5rem;
+    
+    transition: all 0.5s;
+    z-index: 99;
+}
+#notificationContainer.active {
+    bottom: 5px;
+}
