@@ -20,6 +20,20 @@ The submission for the final project was simply php, html, and css running on a 
 
 The programming at the time was rudimentary and my teammates contributions were limited so I over hauled the entire project to be of my own solutions, though credit to the idea itself can be shared with my classmates. I use this application as a way to progress my knowledge in different technologies and practice them by implementing them into a final product that can be demonstrated.
 
+## Important Notes
+
+### Logins & Test Accounts
+ - Accounts can be created and so can the movies by them as well, but most of the current accounts are easily accesible to view already created test data (Including the chat box messages between them and other users)
+ - Most accounts I make to test the site can be accessed with the display username and password being the same
+ - For example login 987654321 as username and password and same with 123456789
+ - The posts, reviews, and messages are simply lorem ipsum for the purposes of testing, but the site is free to explore
+
+ ### Payment System
+- The donation feature is on TEST MODE through stripe!
+- Genuine payment information will not be processed (I have tested this)
+- Stripe offers a variety of test card data here https://stripe.com/docs/testing
+- My goto for testing payments is Card Number: 4242 4242 4242 4242 Exp: (Any Future Date) CVC: (Any three-digit number)
+
 ## Architecture
 
 ### Hosted On AWS Cloud
