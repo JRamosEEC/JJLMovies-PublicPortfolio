@@ -94,13 +94,13 @@
                     </form>
 
                     <div id="spacer" class="col-3"></div>
-                </div>
 
-                <?php 
+                    <?php 
                     if($loginFailed != ""){
                         echo "<div class='row center'><h2 id='loginResponse'>Please enter in a valid username and password.</h2></div>"; 
                     }
-                ?> 
+                    ?> 
+                </div>
             </div>    
         </div>
     </div>
