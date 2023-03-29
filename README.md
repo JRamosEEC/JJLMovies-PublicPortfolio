@@ -28,27 +28,27 @@ The programming at the time was rudimentary and my teammates contributions were 
 
 JJLMovies:<br>
 ├───Backend<br>
-│&nbsp;├───Config<br>
-│&nbsp;├───NodeServer<br>
-│&nbsp;│&nbsp;├───DB<br>
-│&nbsp;│&nbsp;└───S3-URL<br>
-│&nbsp;└───PHP-DB<br>
+│<code>&nbsp;</code>├───Config<br>
+│<code>&nbsp;</code>├───NodeServer<br>
+│<code>&nbsp;</code>│<code>&nbsp;</code>├───DB<br>
+│<code>&nbsp;</code>│<code>&nbsp;</code>└───S3-URL<br>
+│<code>&nbsp;</code>└───PHP-DB<br>
 ├───Frontend<br>
-│&nbsp;├───Admin_Functions<br>
-│&nbsp;├───Blueprints<br>
-│&nbsp;├───CSS<br>
-│&nbsp;├───JavaScript<br>
-│&nbsp;│&nbsp;├───AdminPanel<br>
-│&nbsp;│&nbsp;├───ChatBox<br>
-│&nbsp;│&nbsp;├───Cookies<br>
-│&nbsp;│&nbsp;├───ImageUpload<br>
-│&nbsp;│&nbsp;├───Nav<br>
-│&nbsp;│&nbsp;├───NotificationPopup<br>
-│&nbsp;│&nbsp;├───PaymentGateway<br>
-│&nbsp;│&nbsp;└───Profile<br>
-│&nbsp;├───Login-Signup<br>
-│&nbsp;├───MoviePage<br>
-│&nbsp;└───UserProfile<br>
+│<code>&nbsp;</code>├───Admin_Functions<br>
+│<code>&nbsp;</code>├───Blueprints<br>
+│<code>&nbsp;</code>├───CSS<br>
+│<code>&nbsp;</code>├───JavaScript<br>
+│<code>&nbsp;</code>│<code>&nbsp;</code>├───AdminPanel<br>
+│<code>&nbsp;</code>│<code>&nbsp;</code>├───ChatBox<br>
+│<code>&nbsp;</code>│<code>&nbsp;</code>├───Cookies<br>
+│<code>&nbsp;</code>│<code>&nbsp;</code>├───ImageUpload<br>
+│<code>&nbsp;</code>│<code>&nbsp;</code>├───Nav<br>
+│<code>&nbsp;</code>│<code>&nbsp;</code>├───NotificationPopup<br>
+│<code>&nbsp;</code>│<code>&nbsp;</code>├───PaymentGateway<br>
+│<code>&nbsp;</code>│<code>&nbsp;</code>└───Profile<br>
+│<code>&nbsp;</code>├───Login-Signup<br>
+│<code>&nbsp;</code>├───MoviePage<br>
+│<code>&nbsp;</code>└───UserProfile<br>
 └───images<br>
 
 ### Logins & Test Accounts
