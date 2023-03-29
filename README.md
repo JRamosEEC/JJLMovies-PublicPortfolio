@@ -26,32 +26,31 @@ The programming at the time was rudimentary and my teammates contributions were 
 
 ### File Hierarchy
 
-<code>
-JJLMovies:<br>
+
+```JJLMovies:<br>
 ├───Backend<br>
-│&nbsp;├───Config<br>
-│&nbsp;├───NodeServer<br>
-│&nbsp;│&nbsp;├───DB<br>
-│&nbsp;│&nbsp;└───S3-URL<br>
-│&nbsp;└───PHP-DB<br>
+│   ├───Config<br>
+│   ├───NodeServer<br>
+│   │   ├───DB<br>
+│   │   └───S3-URL<br>
+│   └───PHP-DB<br>
 ├───Frontend<br>
-│&nbsp;├───Admin_Functions<br>
-│&nbsp;├───Blueprints<br>
-│&nbsp;├───CSS<br>
-│&nbsp;├───JavaScript<br>
-│&nbsp;│&nbsp;├───AdminPanel<br>
-│&nbsp;│&nbsp;├───ChatBox<br>
-│&nbsp;│&nbsp;├───Cookies<br>
-│&nbsp;│&nbsp;├───ImageUpload<br>
-│&nbsp;│&nbsp;├───Nav<br>
-│&nbsp;│&nbsp;├───NotificationPopup<br>
-│&nbsp;│&nbsp;├───PaymentGateway<br>
-│&nbsp;│&nbsp;└───Profile<br>
-│&nbsp;├───Login-Signup<br>
-│&nbsp;├───MoviePage<br>
-│&nbsp;└───UserProfile<br>
-└───images<br>
-</code>
+│   ├───Admin_Functions<br>
+│   ├───Blueprints<br>
+│   ├───CSS<br>
+│   ├───JavaScript<br>
+│   │   ├───AdminPanel<br>
+│   │   ├───ChatBox<br>
+│   │   ├───Cookies<br>
+│   │   ├───ImageUpload<br>
+│   │   ├───Nav<br>
+│   │   ├───NotificationPopup<br>
+│   │   ├───PaymentGateway<br>
+│   │   └───Profile<br>
+│   ├───Login-Signup<br>
+│   ├───MoviePage<br>
+│   └───UserProfile<br>
+└───images<br>```
 
 ### Logins & Test Accounts
  - Accounts can be created and so can the movies by them as well, but most of the current accounts are easily accesible to view already created test data (Including the chat box messages between them and other users)
