@@ -50,7 +50,7 @@ The programming at the time was rudimentary and my teammates contributions were 
 │   ├───Login-Signup<br>
 │   ├───MoviePage<br>
 │   └───UserProfile<br>
-└───images<br>```
+└───images```
 
 ### Logins & Test Accounts
  - Accounts can be created and so can the movies by them as well, but most of the current accounts are easily accesible to view already created test data (Including the chat box messages between them and other users)
