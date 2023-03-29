@@ -27,29 +27,29 @@ The programming at the time was rudimentary and my teammates contributions were 
 ### File Hierarchy
 
 
-```JJLMovies:<br>
-├───Backend<br>
-│   ├───Config<br>
-│   ├───NodeServer<br>
-│   │   ├───DB<br>
-│   │   └───S3-URL<br>
-│   └───PHP-DB<br>
-├───Frontend<br>
-│   ├───Admin_Functions<br>
-│   ├───Blueprints<br>
-│   ├───CSS<br>
-│   ├───JavaScript<br>
-│   │   ├───AdminPanel<br>
-│   │   ├───ChatBox<br>
-│   │   ├───Cookies<br>
-│   │   ├───ImageUpload<br>
-│   │   ├───Nav<br>
-│   │   ├───NotificationPopup<br>
-│   │   ├───PaymentGateway<br>
-│   │   └───Profile<br>
-│   ├───Login-Signup<br>
-│   ├───MoviePage<br>
-│   └───UserProfile<br>
+```JJLMovies:
+├───Backend
+│   ├───Config
+│   ├───NodeServer
+│   │   ├───DB
+│   │   └───S3-URL
+│   └───PHP-DB
+├───Frontend
+│   ├───Admin_Functions
+│   ├───Blueprints
+│   ├───CSS
+│   ├───JavaScript
+│   │   ├───AdminPanel
+│   │   ├───ChatBox
+│   │   ├───Cookies
+│   │   ├───ImageUpload
+│   │   ├───Nav
+│   │   ├───NotificationPopup
+│   │   ├───PaymentGateway
+│   │   └───Profile
+│   ├───Login-Signup
+│   ├───MoviePage
+│   └───UserProfile
 └───images
 ```
 
