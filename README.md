@@ -16,7 +16,7 @@
 
 This project was initially a team oriented final assignment referred to as the "Capstone Project". This assignment marked the last step of the Associate Degree in Software Engineering at New England Institute of Technology.
 
-The requirements of the final was for me and my classmates to come up with an idea and implement it into a fully functional CRUD application.
+The requirements of the final was for me and my classmates to come up with a marketable idea and implement it into a fully functional CRUD application.
 
 The submission for the final project was simply php, html, and css running on a local host to show our idea of a movie review site. The idea of the site being that indie film producers could use the site to throw around ideas and get some form of feedback all the while we would protect individuals original idea rights to avoid copyright infringement.
 
