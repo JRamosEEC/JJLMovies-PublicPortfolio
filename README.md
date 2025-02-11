@@ -71,17 +71,17 @@ I recently migrated two separated clouds into one stronger architecture and ther
 ### Hosted On AWS Cloud
 | PRE-Migration                                           |                 POST-Migration                                                                            |
 | ------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| EC2 instance running Linux 2 AMI                        |                 ECS & ECR & Docker W/ Auto-Scaling EC2 Intstances Running Containerized Application       |
-| NGINX reverse proxy                                     |                 NGINX Reverse Proxy (Added Stronger Caching & Now Uses HTTP 2)                            |
-| Apache Web Server                                       |                 Apache Web Server                                                                         |
-| PHP & Node running on the EC2 Instance                  |                 PHP & Node Running As ECS Containerized Task's                                            |
-| Strict Content Security Policy                          |                 Strict Content Security Policy                                                            |
-| TLS/SSL certificates (Utilizing AWS Certs)              |                 TLS/SSL Certificate (Let's Encrypt W/ Automate Renewal)                                   |
-| Route 53 Name Servers                                   |                 Route 53 Name Servers                                                                     |
-| S3 Bucket for object storage                            |                 S3 Bucket For Object Storage                                                              |
-| IAM users for separated access                          |                 IAM Users W/ Separated Access                                                             |
-| RDS for data storage                                    |                 RDS Data Storage                                                                          |
-| Manual Build & Deployment                               |                 Automated CI/CD Build & Deployment System                                                 |
+| EC2 instance running Linux 2 AMI                        |                 ECS & ECR & Docker W/ Auto-Scaling EC2 Intstances Running Containerized Application (Linux Alpine) |
+| NGINX reverse proxy                                     |                 NGINX Reverse Proxy (Added Stronger Caching & Now Uses HTTP 2)                                     |
+| Apache Web Server                                       |                 Apache Web Server                                                                                  |
+| PHP & Node running on the EC2 Instance                  |                 PHP & Node Running As ECS Containerized Task's                                                     |
+| Strict Content Security Policy                          |                 Strict Content Security Policy                                                                     |
+| TLS/SSL certificates (Utilizing AWS Certs)              |                 TLS/SSL Certificate (Let's Encrypt W/ Automate Renewal)                                            |
+| Route 53 Name Servers                                   |                 Route 53 Name Servers                                                                              |
+| S3 Bucket for object storage                            |                 S3 Bucket For Object Storage                                                                       |
+| IAM users for separated access                          |                 IAM Users W/ Separated Access                                                                      |
+| RDS for data storage                                    |                 RDS Data Storage                                                                                   |
+| Manual Build & Deployment                               |                 Automated CI/CD Build & Deployment System                                                          |
 
 ### Server Side In PHP
 - Modularized PHP to serve dynamic web pages
