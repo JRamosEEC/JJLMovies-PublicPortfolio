@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://github.com/JRamosEEC/Portfolio_JJLMovies/blob/main/images/logo-icon.png?raw=true">
+    <img src="https://raw.githubusercontent.com/JRamosEEC/JJLMovies-PublicPortfolio/refs/heads/main/images/logo-icon.png">
 </div>
 
 # JJL Movie Review Web-Application/Website Project
@@ -107,7 +107,7 @@ The programming at the time was rudimentary and my teammates contributions were 
 
 ## Database ERD
 <div align="center">
-    <img src="https://github.com/JRamosEEC/Portfolio_JJLMovies/blob/main/images/Ramos_JJL_Movies_DB_ERD.png?raw=true">
+    <img src="https://raw.githubusercontent.com/JRamosEEC/JJLMovies-PublicPortfolio/refs/heads/main/images/Ramos_JJL_Movies_DB_ERD.png">
 </div>
 
 ## Base Application Features
