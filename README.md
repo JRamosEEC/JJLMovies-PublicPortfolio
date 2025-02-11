@@ -102,7 +102,7 @@ The programming at the time was rudimentary and my teammates contributions were 
 
 ## AWS Cloud Design Diagram
 <div align="center">
-    <img src="https://github.com/JRamosEEC/Portfolio_JJLMovies/blob/main/images/Ramos_JJLCloud.drawio.png?raw=true">
+    <img src="https://raw.githubusercontent.com/JRamosEEC/JJLMovies-PublicPortfolio/refs/heads/main/images/Ramos_JJLCloud.drawio.png">
 </div>
 
 ## Database ERD
