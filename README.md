@@ -104,7 +104,12 @@ I recently migrated two separated clouds into one stronger architecture and ther
 - Separate MySQL user with specified access
 - Sensitive information either hashed or encrypted
 
-## AWS Cloud Design Diagram
+## AWS Cloud Design Diagram (POST-Migration)
+<div align="center">
+    <img src="https://raw.githubusercontent.com/JRamosEEC/JJLMovies-PublicPortfolio/refs/heads/main/images/Foodi_CloudDiagram.png">
+</div>
+
+## AWS Cloud Design Diagram (PRE-Migration)
 <div align="center">
     <img src="https://raw.githubusercontent.com/JRamosEEC/JJLMovies-PublicPortfolio/refs/heads/main/images/Ramos_JJLCloud.drawio.png">
 </div>
